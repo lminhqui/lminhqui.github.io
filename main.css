@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.6s;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: white;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #65abf8;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+.nav-bar{
+    top:0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-bottom: #65abf8 solid 1px;
+}
+
+.nav-bar.sticky{
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    background: #65abf8;
+}
+
+.name-member{
+    color: #65abf8;
+}
+
+.nav-bar-left{
+    margin-left: 200px;
+}
+
+.course-name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav-bar-right {
+    margin-right: 200px;
+    width: 15%;
+}
+
+.nav-bar-right-ul {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.nav-bar-right-title:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.header{
+    margin-right: 90px;
+    display: flex;
+    background: url(https://i.ibb.co/XSzdT4Q/0305-logo-ctu.png) no-repeat right;
+    height: 500px;
+    min-height: 100vh;
+}
+
+.header-contain{
+    z-index: -1;
+}
+
+.header-content {
+    z-index: -2;
+    margin-left: 220px;
+    margin-top: 220px;
+}
+
+.header-content .text-1{
+    font-size: 27px;
+}
+
+.header-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.header-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    cursor: pointer;
+   
+}
+
+.header-content .text-3 span{
+    font-size: 40px;
+    color: #65abf8;
+    margin: 5px 0;
+    font-weight: 800;
+} 
+
+.body-contain {
+    min-height: 500px;
+}
+
+.body-title{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    border-top: solid #65abf836;
+}
+
+.body-contain-card{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.body-card{
+    margin: auto;
+    border-radius: 5px;
+    width: 16%;
+    padding: 10px;
+    transition: 0.5s;
+    min-height: 380px;
+    border-style: double 
+}
+.body-card:hover .card-cv{
+    opacity: 1;
+}
+
+.card-img-contain {
+    width: 242px;
+    height: 242px;
+    border-radius: 50%;
+    border-style: groove;
+    overflow: hidden;
+}
+.card-img-contain:hover .card-img{
+    transform: scale(1.2);
+}
+
+.card-img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.6s;
+}
+
+.card-name ,.card-svid {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.card-cv {
+    font-size: 25px;
+    margin-left: 18%;
+    text-align: center;
+    background: #80deec;
+    max-width: 155px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    line-height: 40px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+.link-cv{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    text-align: center;
+    background: #65abf8;
+}
